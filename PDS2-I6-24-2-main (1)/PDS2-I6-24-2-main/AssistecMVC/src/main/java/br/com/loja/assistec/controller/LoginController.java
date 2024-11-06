@@ -45,7 +45,7 @@ public class LoginController {
 			@Override
 			public void windowClosed(WindowEvent e) {
 				if (listaDadosView != null && !listaDadosView.isEmpty()) {
-					new PrincipalController(listaDadosView.get(0), listaDadosView.get(1));
+				//	new PrincipalController(listaDadosView.get(0), listaDadosView.get(1));
 				}
 			}
 		});
