@@ -115,10 +115,10 @@ public class PrincipalView extends javax.swing.JFrame {
 	}
 
 	// Exibe uma confirmação para fechar o sistema
-	public int confirmarFecharSistema() {
+	/*public int confirmarFecharSistema() {
 		return JOptionPane.showConfirmDialog(this, "Tem certeza que deseja sair?", "Atenção",
 				JOptionPane.YES_NO_OPTION);
-	}
+	}*/
 
 	// Exibe informações sobre o sistema
 	public void mostrarSobre() {

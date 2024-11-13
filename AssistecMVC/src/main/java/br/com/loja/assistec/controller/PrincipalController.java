@@ -6,6 +6,7 @@ import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.util.ArrayList;
 
+import br.com.loja.assistec.view.MensagemView;
 import br.com.loja.assistec.view.PrincipalView;
 
 public class PrincipalController {
@@ -69,15 +70,16 @@ public class PrincipalController {
 
 	// Exibe a mensagem de confirmação de saída e fecha o sistema se confirmado
 	private void sairDoSistema() {
-		int confirmacao = principalView.confirmarFecharSistema();
-		if (confirmacao == 0) {
+		MensagemView mv= new MensagemView("tem certeza");
+		int confirmacao =mv.getResposta();
+		if (confirmacao == 1) {
 			System.exit(0);
 		}
 	}
 
 	// Exibe a tela "Sobre" do sistema
 	private void mostrarInformacoesSobre() {
-		principalView.mostrarSobre();
+		new MensagemView("Infromaçao assistec to com pregriça de escrever",10);
 	}
 
 	// Configura o perfil do usuário e ajusta permissões no menu
