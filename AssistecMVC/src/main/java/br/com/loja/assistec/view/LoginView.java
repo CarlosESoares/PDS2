@@ -66,13 +66,13 @@ public class LoginView extends JFrame {
 		return new String(txtSenha.getPassword());
 	}
 
-	/*public void mostrarMensagem(String mensagem, String tipo) {
-		int messageType = switch (tipo) {
-		case "Atenção" -> JOptionPane.WARNING_MESSAGE;
-		case "Informação" -> JOptionPane.INFORMATION_MESSAGE;
-		case "Erro" -> JOptionPane.ERROR_MESSAGE;
-		default -> JOptionPane.PLAIN_MESSAGE;
-		};
-		JOptionPane.showMessageDialog(this, mensagem, tipo, messageType);
-	}*/
+//	public void mostrarMensagem(String mensagem, String tipo) {
+//		int messageType = switch (tipo) {
+//		case "Atenção" -> JOptionPane.WARNING_MESSAGE;
+//		case "Informação" -> JOptionPane.INFORMATION_MESSAGE;
+//		case "Erro" -> JOptionPane.ERROR_MESSAGE;
+//		default -> JOptionPane.PLAIN_MESSAGE;
+//		};
+//		JOptionPane.showMessageDialog(this, mensagem, tipo, messageType);
+//	}
 }
