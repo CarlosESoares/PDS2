@@ -119,10 +119,20 @@ public class CadastrarUsuariosView extends JFrame {
         return txtFone.getText();
     }
 
+	public void habilitarBotaoExcluir(boolean b) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public Object getPerfilSelecionado() {
+		// TODO Auto-generated method stub
+		return cbPerfil.getSelectedItem();
+	}
+
+	}
 
 
 
-}
 
 
 

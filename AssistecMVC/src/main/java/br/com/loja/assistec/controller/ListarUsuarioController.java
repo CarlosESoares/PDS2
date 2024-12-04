@@ -53,7 +53,14 @@ public class ListarUsuarioController {
 		public void mouseClicked(MouseEvent e) {
 			if (e.getButton() == MouseEvent.BUTTON1) {
 				//Selecionar o usuario
-				System.out.println("clicado no botao esquerdo do mouse");
+				int linha =listarView.getlinhaSelecionada();
+				long iduser = (long) listarView.getValorLinha(linha,0);
+				try {
+					Usuario usuarioSelecionado = buscarUsuarioPorID(iduser);
+				} catch (SQLException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
 			}
 		}
 	}
@@ -81,6 +88,12 @@ public class ListarUsuarioController {
 		new CadastrarUsuarioController(this, usuarioSelecionado);
 	}
 	
+	public Usuario buscarUsuarioPorID(long iduser) throws SQLException {
+		UsuarioDAO dao = new UsuarioDAO();
+		
+		return dao.selecionarUsuario(iduser);
+	}
+
 	private class JanelaAberturaListener extends WindowAdapter{
 		public void windowOpened(WindowEvent e) {
 			try {
